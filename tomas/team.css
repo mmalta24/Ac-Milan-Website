@@ -1,0 +1,221 @@
+.rectangle1{
+    height:275px;
+    background-color: white;
+    border: solid white;
+    width: 165px;
+    position: relative;
+    right: 106px;
+
+}
+
+.rectangle2{
+    height:275px;
+    background-color: white;
+    border: solid white;
+    width: 165px;
+    position: relative;
+    right: 86px;
+
+}
+
+.rectangle3{
+    height:275px;
+    background-color: white;
+    border: solid white;
+    width: 165px;
+    position: relative;
+    right: 66px;
+
+}
+
+.rectangle4{
+    height:275px;
+    background-color: white;
+    border: solid white;
+    width: 165px;
+    position: relative;
+    right: 46px;
+
+}
+
+.flex-container1{
+    background-color:  #F6F6F6;
+    position: relative;
+    right: 730px;
+}
+
+.flex-container4{
+    position: relative;
+    bottom: 10px;
+    right: 640px;
+}
+
+.rectangle5{
+    height:275px;
+    background-color: white;
+    border: solid white;
+    width: 165px;
+    position: relative;
+    right: 26px;
+
+}
+
+.rectangle6{
+    height:275px;
+    background-color: white;
+    border: solid white;
+    width: 165px;
+    position: relative;
+    right: 6px;
+
+}
+
+.rectangle7{
+    height:275px;
+    background-color: white;
+    border: solid white;
+    width: 165px;
+    position: relative;
+    left: 14px;
+
+}
+
+.flex-container2{
+    position: relative;
+    bottom: 10px;
+    right: 645px;
+}
+
+.flex-container3{
+    position: relative;
+    bottom: 10px;
+    right: 725px;
+}
+
+.circulonr{
+    border: 2px solid #ffffff;
+    background-color: #FFFFFF;
+    height: 30px;
+    border-radius:50%;
+    width: 30px;
+    position: absolute;
+    z-index: 2;
+    left:65px;
+    top:175px;
+    box-shadow:
+        0 1.3px 3.3px rgba(0, 0, 0, 0.071),
+        0 3.2px 8px rgba(0, 0, 0, 0.076),
+        0 6px 15px rgba(0, 0, 0, 0.076),
+        0 10.7px 26.8px rgba(0, 0, 0, 0.075),
+        0 20.1px 50.1px rgba(0, 0, 0, 0.073),
+        0 48px 120px rgba(0, 0, 0, 0.07)
+    ;
+}
+
+.circulonr1 {
+    /* Criamr o círculo */
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    /* Reduzi-lo para metade */
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    /* Rotacionar */
+    transform: rotate(-45deg);
+    position: absolute;
+    z-index: 2;
+    left:60px;
+    top:170px;
+    opacity: 50%;
+
+}
+
+.circulonr2 {
+    border: 1px solid #ffffff;
+    height: 50px;
+    border-radius:50%;
+    width: 50px;
+    position: absolute;
+    z-index: 2;
+    left:55px;
+    top:165px;
+    opacity: 50%;
+    
+
+}
+
+.barracapitão{
+    height: 11px;
+    width: 165px;
+    position: absolute;
+    z-index: 2;
+    top:180px;
+    border: 1px solid #86744e;
+    background-color: #86744e;
+    opacity: 90%;
+}
+
+.nomedojogador{
+    position:absolute;
+    z-index: 2;
+    top: 192px;
+
+}
+
+.sobrenomedojogador{
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    right:60px;
+    font-size: 25px;
+}
+
+.sobrenomedojogador1{
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    right:45px;
+    font-size: 25px;
+}
+
+.sobrenomedojogador2{
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    right:40px;
+    font-size: 25px;
+}
+
+.sobrenomedojogador3{
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    right:40px;
+    font-size: 25px;
+}
+
+.sobrenomedojogador4{
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    right:45px;
+    font-size: 25px;
+}
+
+.sobrenomedojogador5{
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    right:40px;
+    font-size: 25px;
+}
+
+.C{
+    position: absolute;
+    top:215px;
+    left: 105px;
+    font-size: 20px;
+    color: #86744e;
+}
+

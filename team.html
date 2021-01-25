@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="authors" content="MarcoMalta_PedroSoares_TomasBorges">
+    <meta name="keywords" content="HTML,CSS,JAVASCRIPT">
+    <meta name="description" content="trabalho_de_grupo">
+    <link rel="stylesheet" type="text/css" href="paginaprincipal.css">
+    <link rel="stylesheet" type="text/css" href="tomas/team.css">
+    <script src="paginaprincipal.js"></script>
+    <script src="tomas/java.js"></script>
+    <title>Team</title>
+    <style>
+        @font-face{
+            font-family: extralight;
+            src: url(tomas/Fonts/ekmukta-extralight-webfont.woff);
+        }
+        @font-face {
+            font-family: extrabold;
+            src: url(tomas/Fonts/ekmukta-bold-webfont.woff);
+        }
+        @font-face {
+            font-family: light;
+            src: url(tomas/Fonts/ekmukta-light-webfont.woff);
+        }
+
+        .sidenav{
+            overflow-y: hidden;
+        }
+
+        body{
+            background-color: #F6F6F6;
+            padding:0;
+            margin:0;
+            overflow-x: hidden;
+        }
+
+        #interimage{
+            border: 0 solid;
+            display:flex;
+            justify-content: center;
+            background-color: #000002; 
+            height:400px;
+        }
+
+        #GridContainer{
+            display:grid;
+            grid-template-columns:60px auto ;
+            
+        }
+
+        #section1{
+            margin:0 auto;
+            height: 650px;
+        }
+
+        #boxmenprincipal{
+            margin: 0 auto;
+            border: 0 solid;
+            position: relative;
+            background: white;
+            height:500px;
+            width: 500px; 
+            top: 80px;
+            right: 600px;
+
+        }
+
+        #boxmenb{
+            margin: 0 auto;
+            border: 0 solid;
+            position: relative;
+            background: white;
+            height:500px;
+            width: 500px; 
+            bottom: 470px;
+        }
+
+        #boxwomen{
+            margin: 0 auto;
+            border: 0 solid;
+            position: relative;
+            background: white;
+            height:500px;
+            width: 500px; 
+            bottom: 1020px;
+            left: 610px;
+        }
+
+        #cf {
+            position:relative;
+            width:500px;
+            margin:0 auto;
+        }
+
+        #cf img {
+            height: 40px;
+            position:absolute;
+            left:170px;
+            bottom: 153px;
+            -webkit-transition: opacity 0.1s ease-in-out;
+            -moz-transition: opacity 0.1s ease-in-out;
+            -o-transition: opacity 0.1s ease-in-out;
+            transition: opacity 0.1s ease-in-out;
+        }
+
+        #cf img.top:hover {
+            opacity:0;
+        }
+
+        #cf1 {
+            position:relative;
+            width:500px;
+            margin:0 auto;
+        }
+
+        #cf1 img {
+            height: 40px;
+            position:absolute;
+            left:170px;
+            bottom: 153px;
+            -webkit-transition: opacity 0.1s ease-in-out;
+            -moz-transition: opacity 0.1s ease-in-out;
+            -o-transition: opacity 0.1s ease-in-out;
+            transition: opacity 0.1s ease-in-out;
+        }
+
+        #cf1 img.top1:hover {
+            opacity:0;
+        }
+
+        #cf2 {
+            position:relative;
+            width:500px;
+            margin:0 auto;
+        }
+
+        #cf2 img {
+            height: 40px;
+            position:absolute;
+            left:170px;
+            bottom: 153px;
+            -webkit-transition: opacity 0.1s ease-in-out;
+            -moz-transition: opacity 0.1s ease-in-out;
+            -o-transition: opacity 0.1s ease-in-out;
+            transition: opacity 0.1s ease-in-out;
+        }
+
+        #cf2 img.top2:hover {
+            opacity:0;
+        }
+
+        #itemnav1{
+            position: sticky;
+            border: 0 solid;
+            padding: 15px;
+            width: 100%;
+            background-color: #0d2332;
+            top: 0;
+            z-index: 2;
+        }
+
+        #nav1{
+            display: flex;
+            justify-content: center;
+        }
+
+        a[navbar^="1"]{
+            position: relative;
+            left: 50px;
+        }
+        a[navbar^="2"]{
+            position: relative;
+            left: 100px;
+        }
+        a[navbar^="3"]{
+            position: relative;
+            left: 150px;
+        }
+        a[navbar^="4"]{
+            position: relative;
+            left: 200px;
+        }
+    </style>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <!-- Menu lateral de navegação -->
+    <div class="sidenav" style="position: fixed;z-index: 3;">
+        <br>
+        <br>
+        <img src="final/pngdddd.png" width=55 style="position:relative;top:7px">
+        <br>
+        <div id="myNav" class="overlay">
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <div class="overlay-content">
+             <div>
+                 <a href="paginaprincipal.html"><u><b>HOME</b></u></a>
+             </div>
+             <div>
+              <a class="novo" href="team.html"><u><b>TEAMS</b></u></a>
+              <a href="tprincipal.html">Principal</a>
+              <a href="teamb.html">Team B</a>
+              <a href="female.html">Female</a>
+              <a href="academy.html">Academy</a>
+             </div>
+             <div>
+              <a href="noticias.html"><b><u>NEWS</u></b></a>
+              <a href="seriea.html">Serie A</a>
+              <a href="serieb.html">Serie B</a>
+              <a href="ic.html">Eu.Leagues</a>
+              <a href="coppa.html">Coppa</a>
+              <a href="others.html">Others</a>
+             </div> 
+             <div>
+                 <a class="novo" href="club.hmtl"><b><u>CLUB</u></b></a>
+                 <a href="history.html">History</a>
+                 <a href="honours.hmtl">Honours</a>
+                 <a href="parteners.html">Partners</a>
+             </div>
+           </div>
+        </div>
+        <button style="cursor:pointer;height:25px;width:25px;border-style:none;background-color: black;position: relative;top:-5px;left:8px;" onclick="openNav()"><img src="final/menu.jpg" width="25px" height="25px"></button>
+        <br>
+        <div id="myOverlay1" class="pesquisa">
+           <span class="fechobtn" onclick="closeSearch()" title="Close Overlay">×</span>
+           <div class="pesquisa-content">
+             <form action="/action_page.php">
+               <input type="text" placeholder="Write something.." name="search">
+               <button type="submit"><i class="fa fa-search"></i>Search</button>
+             </form>
+           </div>
+         </div>
+         <button class="abreBtn" onclick="openSearch()" style="background-color:black;position:relative;top:10px"><img src="final/lupa.png" width=25 ></button>
+         <img src="final/pngdddd.png" width="55">
+         <a href="loja.hmtl" target=_blank style="position:relative;top:-16px;left:-2px;"><img src="final/carrinho.png"width="25" height="25"/></a>
+         <a href="bilhete.html" target=_blank style="position: relative;top:-8px;"> <img src="final/tickets.png" width="25" height="25"/></a>
+         <div class="form-popup" id="myForm">
+           <form action="/action_page.php" class="form-container">
+             <h1 style="color:white">Login</h1>
+         
+             <label for="email" style="color:white"><b>Email</b></label>
+             <input type="text" placeholder="Enter Email" name="email" required>
+         
+             <label for="psw" style="color:white"><b>Password</b></label>
+             <input type="password" placeholder="Enter Password" name="psw" required>
+         
+             <button type="submit" class="btn">Login</button>
+             <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+           </form>
+         </div>
+         <button class="open-button" onclick="openForm()" style="background-color:black;"><img class="icones" src="final/login.png" width="25"></button>   
+         <img src="final/pngdddd.png" width="55" style="position: relative;top:-25px">   
+         <a href="http://www.facebook.com" target="_blank" style="position: relative;top:-37px"><img class="icones" src="final/facebook.png" width="25" height="25"/></a>
+        <br>
+        <a href="http://www.instagram.com" target="_blank"style="position: relative;top:-37px"><img class="icones" src="final/instagram+bw.png" width="25" height="25"/></a>
+        <br>
+        <a href="http://www.twitter.com" target="_blank"style="position: relative;top:-37px"><img class="icones" src="final/twitter.png" width="25" height="25"/></a>
+        <br>
+        <a href="http://www.telegram.com"target="_blank"style="position: relative;top:-37px"><img class="icones" src="final/telegram.png" width="25" height="25"/></a>
+        <br>
+        <a href="http://www.tiktok.com"target="_blank"style="position: relative;top:-37px"><img class="icones" src="final/tiktok.png" width="25" height="25"/></a>      
+       </div>
+       <img style="position: fixed;z-index: 3;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/FC_Internazionale_Milano_2014.svg/1200px-FC_Internazionale_Milano_2014.svg.png" width=70px height=70px class="marco">
+    </div>        
+    <div id="itemnav1">
+        <nav id="nav1">
+            <a href="noticias.html" style="font-family: extralight; color:white;text-decoration:none;" navbar=1>News</a>
+            <a href="#" style="font-family: extralight; color:white;text-decoration:none;font-weight: bold;" navbar=2>Teams</a>
+            <a href="contact.html" style="font-family: extralight; color:white;text-decoration:none;" navbar=3>Contacts</a>
+            <a href="stadium.html" style="font-family: extralight; color:white;text-decoration:none;" navbar=4>Location</a>
+        </nav>
+    </div>
+    <!-- Layout Grid para separar a barra de navegação do conteúdo da página-->
+    <div id="GridContainer">
+        <div></div>   <!-- Área ocupada pelo menu de navegação-->
+        <div>         <!-- Área restante da página-->
+            <div id="itemnav">
+                <nav>
+                    <div id="interimage">
+                        <img width="1300px" src="Novo/interwow.png" >
+                    </div>
+                </nav>
+                <section id="section1">
+                    <div id="boxmenprincipal">
+                        <p style="font-family: extralight; color:grey;font-size: 50px;position: relative;bottom: 80px;">First Men's Team</p>
+                        <img src="tomas/Fotos/firstmenteam.jpg" alt="" height="100%" width="100%" style="position: relative;bottom: 130px;">
+                        <div id="cf1">
+                            <a href="tprincipal.html">
+                                <img class="bottom1" src="tomas/Fotos/gobranco1.png" />
+                                <img class="top1" src="tomas/Fotos/gopreto.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div id="boxmenb">
+                        <p style="font-family: extralight; color:grey;font-size: 50px;position: relative;bottom: 80px;">Team B</p>
+                        <img src="tomas/Fotos/TeamB.jpg" height="100%" width="100%" style="position: relative;bottom: 130px;"alt="TeamB">
+                        <div id="cf">
+                            <a href="teamb.html">
+                                <img class="bottom" src="tomas/Fotos/gobranco.png" />
+                                <img class="top" src="tomas/Fotos/goazul.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div id="boxwomen">
+                        <p style="font-family: extralight; color:grey;font-size: 50px;position: relative;bottom: 80px;">First Women's Team</p>
+                        <img src="tomas/Fotos/woman.jpg" height="100%" width="100%" style="position: relative;bottom: 130px;" alt="">
+                        <div id="cf2">
+                            <a href="female.html">
+                                <img class="bottom2" src="tomas/Fotos/gobranco1.png" />
+                                <img class="top2" src="tomas/Fotos/gopreto.png" />
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

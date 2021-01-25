@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Produtos</title>
+</head>
+<body>
+    
+    <div class="banner_inicial">
+        <div class="center_prods">
+            <h1>Produtos</h1>
+        </div>
+    </div>
+
+    <div class="main">
+
+            
+            <div class="categorias">
+                <h2 id="mochilas">Mochilas</h2>
+                <div class="row">
+                    <div class="col-3 prod_box">
+                            <img src="img/mochila1.jpg" height="400" width="400" class="image">
+                            <div class="overlay">
+                                <div class="text">Bag Nike - 20€</div>
+                                <button class="btn_carrinho" data-preco="20" data-prod="Bag Nike">Adicionar ao Carrinho</button>
+                            </div>
+                    </div>    
+                    <div class="col-3 prod_box">
+                            <img src="img/mochila2.jpg" height="400" width="400" class="image">
+                            <div class="overlay">
+                                <div class="text">Mochila Nike - 50€</div>
+                                <button class="btn_carrinho" data-preco="50" data-prod="Mochila Nike">Adicionar ao Carrinho</button>
+                            </div>
+                    </div>    
+                    <div class="col-3 prod_box">
+                            <img src="img/mochila3.jpg" height="400" width="400" class="image">
+                            <div class="overlay">
+                                <div class="text">Mochila Pele - 75€</div>
+                                <button class="btn_carrinho" data-preco="75" data-prod="Mochila Pele">Adicionar ao Carrinho</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="categorias">
+                <h2 id="camisolas">Camisolas</h2>
+                <div class="row">
+                    <div class="col-3 prod_box">
+                            <img src="img/camisola1.jpg" height="400" width="400" class="image">
+                            <div class="overlay">
+                                <div class="text">T-shirt Preta - 35€</div>
+                                <button class="btn_carrinho" data-preco="35" data-prod="T-shirt Preta">Adicionar ao Carrinho</button>
+                            </div>
+                    </div>    
+                    <div class="col-3 prod_box">
+                            <img src="img/camisola2.jpg" height="400" width="400" class="image">
+                            <div class="overlay">
+                                <div class="text">T-shirt Branca - 35€</div>
+                                <button class="btn_carrinho" data-preco="35" data-prod="T-shirt Branca">Adicionar ao Carrinho</button>
+                            </div>
+                    </div>    
+                    <div class="col-3 prod_box">
+                            <img src="img/camisola3.jpg" height="400" width="400" class="image">
+                            <div class="overlay">
+                                <div class="text">Match Kit - 75€</div>
+                                <button class="btn_carrinho" data-preco="75" data-prod="Match Kit">Adicionar ao Carrinho</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="categorias">
+                <h2 id="casacos">Casacos</h2>
+                <div class="row">
+                    <div class="col-3 prod_box">
+                            <img src="img/casaco1.jpg" height="400" width="400" class="image">
+                            <div class="overlay">
+                                <div class="text">Corta Vento - 100€</div>
+                                <button class="btn_carrinho" data-preco="100" data-prod="Corta Vento">Adicionar ao Carrinho</button>
+                            </div>
+                    </div>    
+                    <div class="col-3 prod_box">
+                            <img src="img/casaco2.jpg" height="400" width="400" class="image">
+                            <div class="overlay">
+                                <div class="text">Casaco Oficial - 80€</div>
+                                <button class="btn_carrinho" data-preco="80" data-prod="Casaco Oficial">Adicionar ao Carrinho</button>
+                            </div>
+                    </div>    
+                    <div class="col-3 prod_box">
+                            <img src="img/casaco3.jpg" height="400" width="400" class="image">
+                            <div class="overlay">
+                                <div class="text">Casaco Treino - 65€</div>
+                                <button class="btn_carrinho" data-preco="65" data-prod="Casaco Treino">Adicionar ao Carrinho</button>     
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+					<span class="close">&times;</span>
+					<div id="produtos_carrinho"></div>
+					<a href="checkout.html" class="btn_checkout">Checkout</a>
+                </div>
+            
+            </div>
+    </div>
+    <script src="JavaScript/loja.js"></script>
+</body>
+</html>

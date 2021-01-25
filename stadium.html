@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="authors" content="MarcoMalta_PedroSoares_TomasBorges">
+    <meta name="keywords" content="HTML,CSS,JAVASCRIPT">
+    <meta name="description" content="trabalho_de_grupo">
+    <link rel="stylesheet" type="text/css" href="paginaprincipal.css">
+    <link rel="stylesheet" type="text/css" href="tomas/academy.css">
+    <link rel="stylesheet" type="text/css" href="tomas/team.css">
+    <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet">
+    <script src="paginaprincipal.js"></script>
+    <script src="tomas/java.js"></script>
+    <title>Stadium</title>
+    <style>
+        @font-face{
+            font-family: extralight;
+            src: url(tomas/Fonts/ekmukta-extralight-webfont.woff);
+        }
+        @font-face {
+            font-family: extrabold;
+            src: url(tomas/Fonts/ekmukta-bold-webfont.woff);
+        }
+        @font-face {
+            font-family: light;
+            src: url(tomas/Fonts/ekmukta-light-webfont.woff);
+        }
+
+        .sidenav{
+            overflow-y: hidden;
+        }
+
+        body{
+            background-color: #F6F6F6;
+            padding:0;
+            margin:0;
+            overflow-x: hidden;
+            height: 900px;
+        }
+
+        #interimage{
+            border: 0 solid;
+            display:flex;
+            justify-content: center;
+            background-color: #000002; 
+            height:400px;
+        }
+
+        #GridContainer{
+            display:grid;
+            grid-template-columns:60px auto ;
+            
+        }
+
+        #GridContainer1{
+            display:grid;
+            grid-template-columns:60px auto ;
+            
+        }
+
+        #section1{
+            margin:0 auto;
+            height: 650px;
+        }
+    </style>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <!-- Menu lateral de navegação -->
+    <div class="sidenav" style="position: fixed;z-index: 3;">
+        <br>
+        <br>
+        <img src="final/pngdddd.png" width=55 style="position:relative;top:7px">
+        <br>
+        <div id="myNav" class="overlay">
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <div class="overlay-content">
+             <div>
+                 <a href="paginaprincipal.html"><u><b>HOME</b></u></a>
+             </div>
+             <div>
+              <a class="novo" href="team.html"><u><b>TEAMS</b></u></a>
+              <a href="tprincipal.html">Principal</a>
+              <a href="teamb.html">Team B</a>
+              <a href="female.html">Female</a>
+              <a href="academy.html">Academy</a>
+             </div>
+             <div>
+              <a href="noticias.html"><b><u>NEWS</u></b></a>
+              <a href="seriea.html">Serie A</a>
+              <a href="serieb.html">Serie B</a>
+              <a href="ic.html">Eu.Leagues</a>
+              <a href="coppa.html">Coppa</a>
+              <a href="others.html">Others</a>
+             </div> 
+             <div>
+                 <a class="novo" href="club.hmtl"><b><u>CLUB</u></b></a>
+                 <a href="history.html">History</a>
+                 <a href="honours.hmtl">Honours</a>
+                 <a href="parteners.html">Partners</a>
+             </div>
+           </div>
+        </div>
+        <button style="cursor:pointer;height:25px;width:25px;border-style:none;background-color: black;position: relative;top:-5px;left:8px;" onclick="openNav()"><img src="final/menu.jpg" width="25px" height="25px"></button>
+        <br>
+        <div id="myOverlay1" class="pesquisa">
+           <span class="fechobtn" onclick="closeSearch()" title="Close Overlay">×</span>
+           <div class="pesquisa-content">
+             <form action="/action_page.php">
+               <input type="text" placeholder="Write something.." name="search">
+               <button type="submit"><i class="fa fa-search"></i>Search</button>
+             </form>
+           </div>
+         </div>
+         <button class="abreBtn" onclick="openSearch()" style="background-color:black;position:relative;top:10px"><img src="final/lupa.png" width=25 ></button>
+         <img src="final/pngdddd.png" width="55">
+         <a href="loja.hmtl" target=_blank style="position:relative;top:-16px;left:-2px;"><img src="final/carrinho.png"width="25" height="25"/></a>
+         <a href="bilhete.html" target=_blank style="position: relative;top:-8px;"> <img src="final/tickets.png" width="25" height="25"/></a>
+         <div class="form-popup" id="myForm">
+           <form action="/action_page.php" class="form-container">
+             <h1 style="color:white">Login</h1>
+         
+             <label for="email" style="color:white"><b>Email</b></label>
+             <input type="text" placeholder="Enter Email" name="email" required>
+         
+             <label for="psw" style="color:white"><b>Password</b></label>
+             <input type="password" placeholder="Enter Password" name="psw" required>
+         
+             <button type="submit" class="btn">Login</button>
+             <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+           </form>
+         </div>
+         <button class="open-button" onclick="openForm()" style="background-color:black;"><img class="icones" src="final/login.png" width="25"></button>   
+         <img src="final/pngdddd.png" width="55" style="position: relative;top:-25px">   
+         <a href="http://www.facebook.com" target="_blank" style="position: relative;top:-37px"><img class="icones" src="final/facebook.png" width="25" height="25"/></a>
+        <br>
+        <a href="http://www.instagram.com" target="_blank"style="position: relative;top:-37px"><img class="icones" src="final/instagram+bw.png" width="25" height="25"/></a>
+        <br>
+        <a href="http://www.twitter.com" target="_blank"style="position: relative;top:-37px"><img class="icones" src="final/twitter.png" width="25" height="25"/></a>
+        <br>
+        <a href="http://www.telegram.com"target="_blank"style="position: relative;top:-37px"><img class="icones" src="final/telegram.png" width="25" height="25"/></a>
+        <br>
+        <a href="http://www.tiktok.com"target="_blank"style="position: relative;top:-37px"><img class="icones" src="final/tiktok.png" width="25" height="25"/></a>      
+       </div>
+       <img style="position: fixed;z-index: 3;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/FC_Internazionale_Milano_2014.svg/1200px-FC_Internazionale_Milano_2014.svg.png" width=70px height=70px class="marco">
+    </div>        
+    <!-- Layout Grid para separar a barra de navegação do conteúdo da página-->
+    <div id="itemnav">
+        <nav id="nav1">
+            <a href="noticias.html" style="font-family: extralight; color:white;text-decoration:none;" navbar=1>News</a>
+            <a href="team.html" style="font-family: extralight; color:white;text-decoration:none;" navbar=2>Teams</a>
+            <a href="contact.html" style="font-family: extralight; color:white;text-decoration:none;" navbar=3>Contacts</a>
+            <a href="#" style="font-family: extralight; color:white;text-decoration:none;font-weight: bold;" navbar=4>Location</a>
+        </nav>
+    </div>
+    <div id="GridContainer">
+        <div></div>   <!-- Área ocupada pelo menu de navegação-->
+        <div class="stadiumsection">         <!-- Área restante da página-->
+            <p class="stadiumname">Giuseppe Meazza Stadium </p>
+            <hr id="hr" style="width: 40%;position: relative;right: 455px;">
+        </div>
+    </div>
+    <div id="GridContainer1">
+        <div></div>
+        <div>
+            <iframe id="shadowmap" style="width: 100%;position: relative;top: 100px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11190.347865739031!2d9.123962!3d45.4781236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9c7d30c7aeff312!2sEst%C3%A1dio%20Giuseppe%20Meazza!5e0!3m2!1spt-PT!2spt!4v1611155342174!5m2!1spt-PT!2spt" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="marco_malta">
+        <meta name="description" content="sebenta_dep_programção">
+        <meta name="keywords" content="html,css,js">
+        <script src="JavaScript/paginap.js"></script>
+        <link rel="stylesheet" type="text/css" href="Css/paginap.css">
+        <title>Inter Milan:Home Page</title>
+<style>
+.textfooter{
+color:rgba(255, 255, 255, 0.616);
+font-family: Arial, Helvetica, sans-serif;
+position: relative;
+top:23px;
+left:273px;
+}
+
+.overlay-content{
+position:relative;
+justify-content: center;
+position: relative;
+
+
+
+}
+.novo1, .novo2,.novo3{
+flex-direction: column;
+display: flex;
+flex-wrap: wrap; 
+padding-right:10%;
+padding-bottom: 5%;
+position: relative;
+top:-50px;
+left:370px;
+
+}
+.novo{
+color:white;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+padding-bottom: 15%;
+}
+.novo4{
+color:white;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+padding-bottom: 15%;
+}
+.fichatecnica1{
+    width:133.8%;
+    background-color:#212121;
+    position: relative;
+    top:70px;
+    right:500px;
+    height:530px;
+    text-align: center;
+    align-items: center;
+    }
+</style>
+</head>
+    <body style="background:rgba(128, 128, 128, 0.288);">
+        <div class="sidenav">
+            <br>
+            <br>
+            <img src="final/pngdddd.png" width=55 style="position:relative;top:7px">
+            <br>
+            <div id="myNav" class="overlay">
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <div class="overlay-content">
+                 <div>
+                     <a href="paginap.html"><u><b>HOME</b></u></a>
+                 </div>
+                 <div>
+                  <a class="novo" href="team.html"><u><b>TEAMS</b></u></a>
+                  <a href="tprincipal.html">Principal</a>
+                  <a href="teamb.html">Team B</a>
+                  <a href="female.html">Female</a>
+                  <a href="academy.html">Academy</a>
+                 </div>
+                 <div>
+                  <a href="noticias.html"><b><u>NEWS</u></b></a>
+                  <a href="seriea.html">Serie A</a>
+                  <a href="serieb.html">Serie B</a>
+                  <a href="ic.html">Eu.Leagues</a>
+                  <a href="coppa.html">Coppa</a>
+                  <a href="others.html">Others</a>
+                 </div> 
+                 <div>
+                     <a class="novo" href="club.html"><b><u>CLUB</u></b></a>
+                     <a href="history.html">History</a>
+                     <a href="honours.html">Honours</a>
+                     <a href="parteners.html">Partners</a>
+                 </div>
+               </div>
+            </div>
+            <button style="cursor:pointer;height:25px;width:25px;border-style:none;background-color: black;position: relative;top:-5px;left:8px;" onclick="openNav()"><img src="final/menu.jpg" width="25px" height="25px"></button>
+            <br>
+            <div id="myOverlay1" class="pesquisa">
+               <span class="fechobtn" onclick="closeSearch()" title="Close Overlay">×</span>
+               <div class="pesquisa-content">
+                 <form action="/action_page.php">
+                   <input type="text" placeholder="Write something.." name="search">
+                   <button type="submit"><i class="fa fa-search"></i>Search</button>
+                 </form>
+               </div>
+             </div>
+             <button class="abreBtn" onclick="openSearch()" style="background-color:black;position:relative;top:10px"><img src="final/lupa.png" width=25 ></button>
+             <img src="final/pngdddd.png" width="55">
+             <a href="index.html" target=_blank style="position:relative;top:-16px;left:-2px;"><img src="final/carrinho.png"width="25" height="25"/></a>
+             <a href="bilhete.html" target=_blank style="position: relative;top:-8px;"> <img src="final/tickets.png" width="25" height="25"/></a>
+             <div class="form-popup" id="myForm">
+               <form action="/action_page.php" class="form-container">
+                 <h1 style="color:white">Login</h1>
+             
+                 <label for="email" style="color:white"><b>Email</b></label>
+                 <input type="text" placeholder="Enter Email" name="email" required>
+             
+                 <label for="psw" style="color:white"><b>Password</b></label>
+                 <input type="password" placeholder="Enter Password" name="psw" required>
+             
+                 <button type="submit" class="btn">Login</button>
+                 <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+               </form>
+             </div>
+             <button class="open-button" onclick="openForm()" style="background-color:black;"><img src="final/login.png" width="25"></button>   
+             <img src="final/pngdddd.png" width="55" style="position: relative;top:-25px">   
+             <a href="http://www.facebook.com" target="_blank" style="position: relative;top:-37px"><img src="final/facebook.png" width="25" height="25"/></a>
+            <br>
+            <a href="http://www.instagram.com" target="_blank"style="position: relative;top:-37px"><img src="final/instagram+bw.png" width="25" height="25"/></a>
+            <br>
+            <a href="http://www.twitter.com" target="_blank"style="position: relative;top:-37px"><img src="final/twitter.png" width="25" height="25"/></a>
+            <br>
+            <a href="http://www.telegram.com"target="_blank"style="position: relative;top:-37px"><img src="final/telegram.png" width="25" height="25"/></a>
+            <br>
+            <a href="http://www.tiktok.com"target="_blank"style="position: relative;top:-37px"><img src="final/tiktok.png" width="25" height="25"/></a>      
+           </div>
+           <a href=“paginap.html”><img src="final/1200px-FC_Internazionale_Milano_2014.svg.png" width=70px height=70px class="marco"></a>
+           <div class="mySlides">
+            <img class="mySlides1" src="final/2news.jpg" style="width:100.5%">
+            <div class="legend"> 
+                <u style="font-family: Arial, Helvetica, sans-serif;;color:#A39261;font-size:25px;font-weight:bold;margin-top:5%;margin-bottom:5%;margin-left:3%;">INTER MILAN</u>
+                <b style="font-family:Arial, Helvetica, sans-serif;color:white;font-size:35px;margin-top:5%;margin-bottom:5%;margin-left:3%">Another new record broken...</b>
+                <input type="button" style="border-radius:3%;font-size:25px;font-family: Arial, Helvetica, sans-serif;background-color:#A39261;color:white;border:none;margin-top:5%;margin-bottom:5%;margin-left:3%" value="Read More" onclick="location.href='news.html'" >   
+            </div>
+          </div>
+          <div class="mySlides">
+            <img class="mySlides1" src="final/1news.jpg" style="width:100.5%">
+            <div class="legend"> 
+                <u style="font-family: Arial, Helvetica, sans-serif;;color:#A39261;font-size:25px;font-weight:bold;margin-top:5%;margin-bottom:5%;margin-left:3%;">INTER MILAN</u>
+                <b style="font-family:Arial, Helvetica, sans-serif;color:white;font-size:35px;margin-top:5%;margin-bottom:5%;margin-left:3%">Lazio-Inter Conference</b>
+                <input type="button" style="border-radius:3%;font-size:25px;font-family: Arial, Helvetica, sans-serif;background-color:#A39261;color:white;border:none;margin-top:5%;margin-bottom:5%;margin-left:3%" value="Read More" onclick="location.href='news.html'" >   
+                </div>
+           </div>
+           <div class="mySlides">
+            <img class="mySlides1" src="final/3news.jpg" style="width:100.5%">
+            <div class="legend"> 
+                <u style="font-family: Arial, Helvetica, sans-serif;;color:#A39261;font-size:25px;font-weight:bold;margin-top:5%;margin-bottom:5%;margin-left:3%;">INTER MILAN</u>
+                <b style="font-family:Arial, Helvetica, sans-serif;color:white;font-size:35px;margin-top:5%;margin-bottom:5%;margin-left:3%">Recap about: SEASON19/20</b>
+                <input type="button" style="border-radius:3%;font-size:25px;font-family: Arial, Helvetica, sans-serif;background-color:#A39261;color:white;border:none;margin-top:5%;margin-bottom:5%;margin-left:3%" value="Read More" onclick="location.href='news.html'" >   
+            </div>
+           </div>
+          <script>
+            var slideIndex = 0;
+           carousel();
+         
+          function carousel() {
+           var i;
+           var x = document.getElementsByClassName("mySlides");
+           for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+           }
+           slideIndex++;
+           if (slideIndex > x.length) {slideIndex = 1}
+           x[slideIndex-1].style.display = "block";
+           setTimeout(carousel, 5000); // Change image every 2 seconds
+         }
+          </script> 
+          <div>
+          <div class="conteudopp">
+             <div class="nextgames" style="position: relative;left:52px;bottom:252px;padding-top:0.5%;">
+                <div>
+                <b style="font-family: Arial, Helvetica, sans-serif;color:white;font-size:20px;margin-left:2%;">Next Games</u>
+                <a href="#2" class="finaltabela"style="text-decoration:none;color:white;font-family:arial, helvetica, sans-serif;font-size:15px;font-weight:normal">See More</a>
+                <hr style="background-color: white;color:white;">
+                </div>
+                <div style="position: relative;right:275px;bottom:15px;">
+                    <div class="slidegame">
+                        <img style="position: relative;left:320px" widht="570px" height="270" src="final/last_game.jpg">
+                      </div>
+                      
+                      <div  class="slidegame">
+                        <img style="position: relative;left:320px" widht="570px" height="270"src="final/now_game.jpg">
+                      </div>
+                      
+                      <div class="slidegame">
+                        <img style="position: relative;left:320px" widht="570px" height="270"src="final/next_next_game.jpg">
+                      </div>
+                      <script>
+                        var slideIndex = 0;
+                       slide();
+                     
+                      function slide() {
+                       var i;
+                       var x = document.getElementsByClassName("slidegame");
+                       for (i = 0; i < x.length; i++) {
+                         x[i].style.display = "none";
+                       }
+                       slideIndex++;
+                       if (slideIndex > x.length) {slideIndex = 1}
+                       x[slideIndex-1].style.display = "block";
+                       setTimeout(slide, 7000); // Change image every 2 seconds
+                     }
+                      </script> 
+                </div>
+             </div>
+             <div class="nextgames1" style="position: relative;left:702px;bottom:626px;padding-top:0.5%;">
+                <div>
+                <b style="font-family: Arial, Helvetica, sans-serif;color:white;font-size:20px;margin-left:2%;">Serie A</u>
+                <a href="#2" class="finaltabela1"style="text-decoration:none;color:white;font-family:arial, helvetica, sans-serif;font-size:15px;font-weight:normal">See More</a>
+                <hr style="background-color: white;color:white;">
+                </div>
+                
+                     <div class="rowpoints">
+          <div class="columnpoints">
+            <table class="tablepoint">
+              <tr>
+                <th class="titletable">Team</th>
+                <th class="titletable">GM-GS</th>
+                <th class="titletable">Points</th>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;"class="titletext">Milan</td>
+                <td class="titletext">39-19</td>
+                <td class="titletext">43</td>
+              </tr>
+              <tr>
+                <td  style="font-weight:bold;color:red"class="titletext">Inter</td>
+                <td style="color:red"class="titletext">45-23</td>
+                <td style="color:red"class="titletext">40</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold;"class="titletext">Roma</td>
+                <td class="titletext">37-29</td>
+                <td class="titletext">34</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold;"class="titletext">Juventus</td>
+                <td class="titletext">35-18</td>
+                <td class="titletext">33</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold;"class="titletext">Atalanta</td>
+                <td class="titletext">41-23</td>
+                <td class="titletext">33</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+                </div>
+          </div>
+        <div class="barra">
+            <a  style="text-decoration:none;"href="#3"><b style="color:white;font-size:35px;font-family: Arial, Helvetica, sans-serif;position: relative;top:17px;">Download the official app now </b>
+        </div>
+        <div class="tudo">
+          <div class="coluna">
+              <div class="topico"style="position:relative;top:37px;height:307px;">
+                <img src="final/internazionale_spalla (6).jpg" height="173px" width="247px" style="position:relative;bottom:2%;">
+                <figcaption style="font-size:13px;text-decoration:none;color:#99C2E0;" class="txt" >27/12/2020</figcaption>
+                <a class="txt" style="font-size: 15px;font-weight:bold;">INTER REVIEW | THE TOP-10 NERAZZURRI GOALS FROM 2020</a>
+               <br>
+               <br>
+               <input type="button" onclick="location.href='#4'" value="Read &#8594;" class="btn danger" style="position: relative;left:51%;top:-9px;">
+               <br>
+               <br>
+              </div>
+          </div>
+          <div class="coluna">
+            <div class="topico"style="background-color:#383737;height:95.4%;position:relative;top:19px;">
+              <img src="final/internazionale_spalla (1).jpg" height="173px" style="position: relative;bottom:12px">
+              <figcaption class="txt" style="font-size:13px;text-decoration:none;color:#99C2E0;">27/12/2020</figcaption>
+             <a class="txt" style="font-size: 15px;font-weight:bold;">VIDAL, HIS FIRST NERAZZURRI CHRISTMAS: "I'M HERE TO WIN, WE HAVE A LOT OF HUNGER"</a>
+             <br>
+             <input type="button" onclick="location.href='#4'" value="Read &#8594;" class="btn danger" style="position: relative;left:51%;top:0%">
+             <br>
+             </div>
+          </div>
+          <div class="coluna1">
+            <div class="topico1">
+              <img src="final/fifa-21.jpg" style="height:346px;width:565px">
+              <a class="txt" style="position: relative;left:1%;top:30px;font-size: 25px;font-weight:bold;">INTER UNVEIL NEW FIFA 21 ESPORTS TEAM | INTER x BUNDLED</a>
+              <br>
+              <br>
+              <input type="button" onclick="location.href='#4'" value="See Video &#8594;" class="btn danger" style="position: relative;left:-2%;top:280px;height:10%">
+             </div>
+         </div>
+          <div class="coluna">
+            <div class="topico" style="background-color:#383737;">
+              <img src="final/internazionale_spalla (3).jpg" height="173px">
+              <figcaption class="txt" style="font-size:13px;text-decoration:none;color:#99C2E0;">25/12/2020</figcaption>
+              <br>
+              <a class="txt" style="font-size:15px;font-weight:bold;word-wrap:break-word;" >INTER CHRISTMAS: HOW "CLOSER BY MAGIC" WAS CREATED</a>
+              <br>
+              <input type="button" onclick="location.href='#4'" value="Read &#8594;" class="btn danger" style="position: relative;left:51%;top:-10%">
+              <br>
+             </div>
+          </div>
+          <div class="coluna">
+            <div class="topico" style="height:98.5%">
+              <img src="final/internazionale_spalla (4).jpg" height="173px" style="position:relative;top:-0.7%" >
+              <figcaption class="txt" style="font-size:13px;text-decoration:none;color:#99C2E0;">24/12/2020</figcaption>
+              <br>
+              <a class="txt" style="font-size:15px;font-weight:bold;">
+                 INTER STATS | SEVEN SUCCESSIVE WINS, THE BEST ATTACK AND 100 APPEARANCES FOR DE VRIJ</a>
+                 <br>
+                 <input type="button" onclick="location.href='#4'" value="Read &#8594;" class="btn danger" style="position: relative;left:51%;top:-18px">
+             </div>
+          </div>
+          <div class="coluna">
+            <div class="topico" style="background-color:#383737;height:98.5%">
+              <img src="final/internazionale_spalla (5).jpg" height="173px" style="position: relative;top:3px">
+              <figcaption class="txt" style="font-size:13px;text-decoration:none;color:#99C2E0;position: relative;top:1.5%;">24/12/2020</figcaption>
+              <br>
+              <a class="txt" style="font-size:15px;font-weight:bold;">THE MVP FROM HELLAS VERONA VS. INTER IS...</a>
+              <br>
+              <br>
+              <br>
+              <input type="button" onclick="location.href='#4'" value="Read &#8594;" class="btn danger" style="position: relative;left:51%;top:-23px">
+             </div>
+          </div>
+          <div class="coluna">
+            <div class="topico">
+              <img src="final/internazionale_spalla.jpg" height="173px">
+              <figcaption class="txt" style="font-size:13px;text-decoration:none;color:#99C2E0;position:relative;top:2.5px;">23/12/2020</figcaption>
+              <br>
+              <a class="txt" style="font-size:15px;font-weight:bold">LAUTARO MARTINEZ AND GAGLIARDINI WIN THE FIRST GOTM AWARDS</a>
+              <br>
+              <br>
+              <input type="button" onclick="location.href='#4'" value="Read &#8594;" class="btn danger" style="position: relative;left:51%;top:-18px">
+             </div>
+          </div>
+          <div class="coluna2">
+            <div class="topico2"style="background-color:#383737;height:97.2%">
+              <img src="final/internazionale_spalla (7).jpg" width="389px" height="209px">
+              <figcaption class="txt" style="font-size:13px;text-decoration:none;color:#99C2E0;">23/12/2020</figcaption>
+              <br>
+              <a class="txt" style="font-size:15px;font-weight:bold">CLOSER BY MAGIC, LISTEN TO INTER'S CHRISTMAS SONG!</a>
+              <input type="button" onclick="location.href='#4'" value="Listen Song &#8594;" class="btn danger" style="position: relative;left:51%;top:2px">
+              <br>
+              </div>
+          </div>
+      </div>
+      <div class="tudo1">
+        <b><a style="color:#87754C;font-size:20px;font-family: Arial, Helvetica, sans-serif;padding-left:1%;position: relative;top:5px;">INTER OFFICIAL ONLINE STORE</a></b>
+        <br>
+        <hr style="background-color:#87754C;color:#87754C;width:31.5%;position:relative;left:-328px;">
+        <br>
+        <a class="text">Visit Store.Inter.it and check out the <br>official Jersey, the new Nike collection <br>and our wide range of personalized <br>merchandising for men, woman and <br> children.<br></a>
+        <img  class="picture"src="final/away2_ok.png">
+        <input type="button" value="Go to the Shop &#8594" onclick="location.href='shop.html'" class="btnshop">
+        <a href="#4"><img class="share"src="final/share.png"></a>
+        <img class="home"src="final/homet1.jpg" onclick="myFunction(this)">
+        <img class="second" src="final/secondt1.jpg" onclick="myFunction(this)">
+        <img class="third" src="final/thirdt.jpg" onclick="myFunction(this)">
+        <div class="newsshop">
+            <b><a style="color:white;font-size:20px;font-family: Arial, Helvetica, sans-serif;text-decoration:underline;position: relative;top:10px;left:20px;">COMING SOON...</a></b>
+            <div class="item">
+               <img  style="width:100px;position: relative;left:8px;"src="final/cap_inter.png">
+               <a style="font-family: Arial, Helvetica, sans-serif;color:#333333;font-weight: bold;position: relative;bottom:120px;left:10px;font-size:16px;">BEANIE NIKE INTER MILAN</a>
+               <b style="color:#0066AA;font-family: Arial, Helvetica, sans-serif;font-size:20px;position: relative;bottom:100px;left:116px;">€10.99</b>
+               <input type="button" value="Pre-Order &#8594 " onclick="location.href='#4'" class="btnorder1">
+            </div>
+            <div class="item1">
+              <img style="width:100px;position: relative;left:10px;"src="final/equipamento1.png">
+              <a style="font-family: Arial, Helvetica, sans-serif;color:#333333;font-weight: bold;position: relative;bottom:120px;left:10px;font-size:17px;">INTER JERSEY 2020/2021</a>
+              <b style="color:#0066AA;font-family: Arial, Helvetica, sans-serif;font-size:20px;position: relative;bottom:100px;left:116px;">€80.99</b>
+              <input type="button" value="Pre-Order &#8594 " onclick="location.href='#5'" class="btnorder2">
+            </div>
+            <hr style="color:white;background-color:white;position: relative;top:110px">
+            <input type="button" value="See more products of this type &#8594 " onclick="location.href='shop.html'" class="btn3">
+           
+        </div>
+     </div>
+     <img style="width:400px;height:510px;position: relative;left:1092px;bottom:1010px"src="final/box1.jpg">
+     <canvas width=1428% height="40px"style="background-color:#F9F9F9;position:relative;bottom:2391px;left:68px;"></canvas>
+     <a style="text-decoration:none;"href="#7"><b style="color:#87754C;font-size:35px;font-family: Arial, Helvetica, sans-serif;position: relative;bottom:2448px;left:72px">Last News </b>
+     <a style="position: relative;font-family: Arial, Helvetica, sans-serif;font-size:50px;bottom:500px;left:50px">We build something here,please wait...</a> 
+      <footer>
+        <div class="fichatecnica1">
+            <a class="textfooter">Copyright © 1995—2019 F.C. Internazionale Milano P.IVA 04231750151</a>
+            <hr style="position:relative;top:40px;background-color: white;color:white;">
+            <div class="overlay-content">
+                <div class="novo1">
+                    <a class="novo" href="paginaprincipal.html"><u><b>HOME</b></u></a>
+                </div>
+                <div class="novo1">
+                 <a class="novo" href="team.html"><u><b>TEAMS</b></u></a>
+                 <a class="novo4" href="tprincipal.html">Principal</a>
+                 <a class="novo4" href="teamb.html">Team B</a>
+                 <a class="novo4" href="female.html">Female</a>
+                 <a class="novo4" href="academy.hml">Academy</a>
+                </div>
+                <div class="novo2">
+                 <a class="novo" href="noticias.html"><b><u>NEWS</u></b></a>
+                 <a class="novo4" href="seriea.html">Serie A</a>
+                 <a class="novo4" href="serieb.html">Serie B</a>
+                 <a class="novo4" href="ic.html">Eu.Leagues</a>
+                 <a class="novo4" href="coppa.html">Coppa</a>
+                 <a class="novo4" href="others.html">Others</a>
+                </div> 
+                <div class="novo3">
+                    <a class="novo" href="club.html"><b><u>CLUB</u></b></a>
+                    <a class="novo4" href="history.html">History</a>
+                    <a class="novo4" href="honours.html">Honours</a>
+                    <a class="novo4" href="parteners.html">Partners</a>
+                </div>
+              </div>
+          </div>
+          
+    </footer>
+    </body>
+    </html>

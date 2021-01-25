@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="authors" content="MarcoMalta_PedroSoares_TomasBorges">
+    <meta name="keywords" content="HTML,CSS,JAVASCRIPT">
+    <meta name="description" content="trabalho_de_grupo">
+    <link rel="stylesheet" type="text/css" href="paginaprincipal.css">
+    <link rel="stylesheet" type="text/css" href="tomas/team.css">
+    <script src="paginaprincipal.js"></script>
+    <script src="tomas/java.js"></script>
+    <title>Principal Team</title>
+    <style>
+        @font-face{
+            font-family: extralight;
+            src: url(tomas/Fonts/ekmukta-extralight-webfont.woff);
+        }
+        @font-face {
+            font-family: extrabold;
+            src: url(tomas/Fonts/ekmukta-bold-webfont.woff);
+        }
+        @font-face {
+            font-family: light;
+            src: url(tomas/Fonts/ekmukta-light-webfont.woff);
+        }
+
+        .sidenav{
+            overflow-y: hidden;
+        }
+
+        body{
+            background-color:black;
+            padding:0;
+            margin:0;
+            overflow-x: hidden;
+        }
+
+        #interimage{
+            border: 0 solid;
+            display:flex;
+            justify-content: center;
+            background-color: #000002; 
+            height:400px;
+        }
+
+        #barrabranca{
+            display: grid;
+            grid-template-columns: 60px 130px 120px 120px auto;
+            padding:10px;
+            background-color: white;
+        }
+
+        #GridContainer{
+            display:grid;
+            grid-template-columns:60px auto ;
+            
+        }
+
+        #itemsection1 div,#itemsection2 div,#itemsection3 div,#itemsection4 div{
+            display:flex;
+            justify-content: center;
+        }
+
+        #itemsection1{
+            background-color:  #F6F6F6;
+            position: relative;
+            left: 400px;
+            height: 390px;
+        }
+
+        #itemsection2{
+            background-color:  #F6F6F6;
+            position: relative;
+            left: 400px;
+            height: 390px;
+        }
+        #itemsection3{
+            background-color:  #F6F6F6;
+            position: relative;
+            left: 400px;
+            height: 390px;
+        }
+        #itemnav{
+            z-index: 2;
+            position: relative;
+        }
+        #itemsection4{
+            background-color:  #F6F6F6;
+            position: relative;
+            left: 400px;
+            height: 400px;
+        }
+
+        .intro{ 
+            position: relative;
+            left: 390px;
+            font-size: 18px;
+        }
+
+        #item{
+            margin:20px;
+        }
+        
+        .def, .goal, .strikers, .mid{
+            background-color:  #F6F6F6;
+        }
+
+        .strikers{
+            position: relative;
+            height: 420px;
+            top:3px;
+        }
+
+        .goal{
+            position: relative;
+            height: 403px;
+        }
+        
+        .def{
+            position:relative;
+            top:1px;
+            height: 420px;
+        }
+
+        .mid{
+            position: relative;
+            height: 420px;
+            top:2px;
+        }
+
+        
+        .olé{
+            background-color:  #F6F6F6;
+            position: relative;
+            right: 850px;
+            bottom: 15px;
+            height:90px;
+        }
+
+        .olé1{
+            position: relative;
+            right: 860px;
+        }
+
+
+        .olé2{
+            position: relative;
+            right:850px;
+        }
+
+        .olé3{
+            position: relative;
+            right:850px;
+        }
+
+        .header12{
+            position: sticky;
+            top:0;
+        }
+
+        #cf {
+            position:relative;
+
+            width:500px;
+            margin:0 auto;
+        }
+
+        #cf img {
+            height: 30px;
+            position:absolute;
+            left:50px;
+            bottom: 20px;
+            -webkit-transition: opacity 0.5s ease-in-out;
+            -moz-transition: opacity 0.5s ease-in-out;
+            -o-transition: opacity 0.5s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        #cf img.top:hover {
+            opacity:0;
+        }
+
+        #cf1 {
+            position:relative;
+            width:500px;
+            margin:0 auto;
+        }
+
+        #cf1 img {
+            height: 80px;
+            position:absolute;
+            left:250px;
+            bottom: -5px;
+            -webkit-transition: opacity 0.5s ease-in-out;
+            -moz-transition: opacity 0.5s ease-in-out;
+            -o-transition: opacity 0.5s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        #cf1 img.top1:hover {
+            opacity:0;
+        }
+
+        #cf2 {
+            position:relative;
+            width:500px;
+            margin:0 auto;
+        }
+
+        #cf2 img {
+            height: 70px;
+            position:absolute;
+            left:175px;
+            bottom: -60px;
+            -webkit-transition: opacity 0.5s ease-in-out;
+            -moz-transition: opacity 0.5s ease-in-out;
+            -o-transition: opacity 0.5s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        #cf2 img.top2:hover {
+            opacity:0;
+        }
+    </style>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <!-- Menu lateral de navegação -->
+    <div class="sidenav" style="position: fixed;z-index: 3;">
+        <br>
+        <br>
+        <img src="final/pngdddd.png" width=55 style="position:relative;top:7px">
+        <br>
+        <div id="myNav" class="overlay">
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <div class="overlay-content">
+             <div>
+                 <a href="paginaprincipal.html"><u><b>HOME</b></u></a>
+             </div>
+             <div>
+              <a class="novo" href="team.html"><u><b>TEAMS</b></u></a>
+              <a href="tprincipal.html">Principal</a>
+              <a href="teamb.html">Team B</a>
+              <a href="female.html">Female</a>
+              <a href="academy.html">Academy</a>
+             </div>
+             <div>
+              <a href="noticias.html"><b><u>NEWS</u></b></a>
+              <a href="seriea.html">Serie A</a>
+              <a href="serieb.html">Serie B</a>
+              <a href="ic.html">Eu.Leagues</a>
+              <a href="coppa.html">Coppa</a>
+              <a href="others.html">Others</a>
+             </div> 
+             <div>
+                 <a class="novo" href="club.hmtl"><b><u>CLUB</u></b></a>
+                 <a href="history.html">History</a>
+                 <a href="honours.hmtl">Honours</a>
+                 <a href="parteners.html">Partners</a>
+             </div>
+           </div>
+        </div>
+        <button style="cursor:pointer;height:25px;width:25px;border-style:none;background-color: black;position: relative;top:-5px;left:8px;" onclick="openNav()"><img src="final/menu.jpg" width="25px" height="25px"></button>
+        <br>
+        <div id="myOverlay1" class="pesquisa">
+           <span class="fechobtn" onclick="closeSearch()" title="Close Overlay">×</span>
+           <div class="pesquisa-content">
+             <form action="/action_page.php">
+               <input type="text" placeholder="Write something.." name="search">
+               <button type="submit"><i class="fa fa-search"></i>Search</button>
+             </form>
+           </div>
+         </div>
+         <button class="abreBtn" onclick="openSearch()" style="background-color:black;position:relative;top:10px"><img src="final/lupa.png" width=25 ></button>
+         <img src="final/pngdddd.png" width="55">
+         <a href="loja.hmtl" target=_blank style="position:relative;top:-16px;left:-2px;"><img src="final/carrinho.png"width="25" height="25"/></a>
+         <a href="bilhete.html" target=_blank style="position: relative;top:-8px;"> <img src="final/tickets.png" width="25" height="25"/></a>
+         <div class="form-popup" id="myForm">
+           <form action="/action_page.php" class="form-container">
+             <h1 style="color:white">Login</h1>
+         
+             <label for="email" style="color:white"><b>Email</b></label>
+             <input type="text" placeholder="Enter Email" name="email" required>
+         
+             <label for="psw" style="color:white"><b>Password</b></label>
+             <input type="password" placeholder="Enter Password" name="psw" required>
+         
+             <button type="submit" class="btn">Login</button>
+             <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+           </form>
+         </div>
+         <button class="open-button" onclick="openForm()" style="background-color:black;"><img class="icones" src="final/login.png" width="25"></button>   
+         <img src="final/pngdddd.png" width="55" style="position: relative;top:-25px">   
+         <a href="http://www.facebook.com" target="_blank" style="position: relative;top:-37px"><img class="icones" src="final/facebook.png" width="25" height="25"/></a>
+        <br>
+        <a href="http://www.instagram.com" target="_blank"style="position: relative;top:-37px"><img class="icones" src="final/instagram+bw.png" width="25" height="25"/></a>
+        <br>
+        <a href="http://www.twitter.com" target="_blank"style="position: relative;top:-37px"><img class="icones" src="final/twitter.png" width="25" height="25"/></a>
+        <br>
+        <a href="http://www.telegram.com"target="_blank"style="position: relative;top:-37px"><img class="icones" src="final/telegram.png" width="25" height="25"/></a>
+        <br>
+        <a href="http://www.tiktok.com"target="_blank"style="position: relative;top:-37px"><img class="icones" src="final/tiktok.png" width="25" height="25"/></a>      
+       </div>
+       <img style="position: fixed;z-index: 3;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/FC_Internazionale_Milano_2014.svg/1200px-FC_Internazionale_Milano_2014.svg.png" width=70px height=70px class="marco">
+    </div>        
+    <!-- Layout Grid para separar a barra de navegação do conteúdo da página-->
+    <div id="GridContainer">
+        <div></div>   <!-- Área ocupada pelo menu de navegação-->
+        <div>         <!-- Área restante da página-->
+            <div id="itemnav">
+                <nav>
+                    <div id="interimage">
+                        <img width="1300px" src="Novo/interwow.png" >
+                    </div>
+                    <div class="header12">
+                        <div id="barrabranca">
+                            <div class="intro">
+                            <a href="tprincipal.html" style="font-family: extralight; color:grey;text-decoration:none;" >All</a>
+                            </div>
+                            <div class="intro">
+                            <a href="goalkeepers.html" style="font-family: extralight; color:grey;text-decoration:none;" >Goalkeepers</a>
+                            </div>
+                            <div class="intro">
+                            <a href="#" style="font-family: extrabold; color:black;text-decoration:none;" >Defenders</a>
+                            </div>
+                            <div class="intro">
+                            <a href="Midfielders.html" style="font-family: extralight; color:grey;text-decoration:none;" >Midfielders</a>
+                            </div>
+                            <div class="intro">
+                            <a href="Strikers.html" style="font-family: extralight; color:grey;text-decoration:none;" >Strikers</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>    
+            <div class="def">
+                <section id="itemsection2">
+                    <div class="olé1">
+                        <div>
+                        <p style="font-family: extralight; color:black; font-size: 200%;">Defenders</p>
+                        </div>
+                    </div>    
+                    <div class="flex-container2">
+                        <div class="rectangle1">
+                            <div class="foto4">
+                                <img src="tomas/Fotos/Mike.png" alt="Micael" height="180" width="165" style="position: relative;top:10px;">
+                            </div>
+                            <div class="circulonr2"></div>
+                            <div class="circulonr1"></div>
+                            <div class="nomedojogador">
+                                <p style="font-family: extralight; color:black;">Wilson</p>
+                            </div>
+                            <div class="sobrenomedojogador4">
+                                <p style="font-family: light; color: rgb(0, 0, 0);letter-spacing: -1px;">Oliveira</p>
+                            </div>
+                            <div class="circulonr">
+                                <div class="numerodejogador">
+                                    <p style="font-family: extrabold; color:rgba(0, 0, 0, 0.719);position: relative;bottom: 15px;left: 0.5px;">2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rectangle2">
+                            <div class="foto5">
+                                <img src="tomas/Fotos/Bud.png" alt="Spencer" height="180" width="165" style="position: relative;top:10px;">
+                            </div>
+                            <div class="circulonr2"></div>
+                            <div class="circulonr1"></div>
+                            <div class="nomedojogador">
+                                <p style="font-family: extralight; color:black;">Mário</p>
+                            </div>
+                            <div class="sobrenomedojogador5">
+                                <p style="font-family: light; color: rgb(0, 0, 0);letter-spacing: -1px;">Antunes</p>
+                            </div>
+                            <div class="circulonr">
+                                <div class="numerodejogador">
+                                    <p style="font-family: extrabold; color:rgba(0, 0, 0, 0.719);position: relative;bottom: 15px;">16</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section  style="background-color: #0066aa; padding: 100px;" id="lastsection">
+                <div id="cf">
+                    <a target="_blank"  href="https://termasdeluso.pt/">
+                        <img class="bottom" src="tomas/Fotos/luso.png" />
+                        <img class="top" src="tomas/Fotos/lusobaw.png" />
+                    </a>
+                </div>
+                <div id="cf1">
+                    <a target="_blank"  href="https://mimosa.com.pt/">
+                        <img class="bottom1" src="tomas/Fotos/mimosacores.png" />
+                        <img class="top1" src="tomas/Fotos/mimosa.png" />
+                    </a>
+                </div>
+                <div id="cf2">
+                    <a target="_blank" href="https://www.lidl.pt/">
+                        <img class="bottom2" src="tomas/Fotos/lidl.png" />
+                        <img class="top2" src="tomas/Fotos/lidlbaw.png" />
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

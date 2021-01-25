@@ -1,0 +1,618 @@
+.sidenav {
+  height: 100%; 
+  width: 60px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color:black; 
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*EMBLEMA*/
+.marco{
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0; 
+}
+/*MENU*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+ justify-content: center;
+ align-content:space-around;
+ align-items:baseline;
+
+
+}
+
+.overlay a {
+  padding: 8px;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+/*PESQUISA*/
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.abreBtn {
+  background: #f1f1f1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.abreBtn:hover {
+  background: #bbb;
+}
+
+.pesquisa {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.pesquisa-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.pesquisa .fechobtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.pesquisa .fechobtn:hover {
+  color: #ccc;
+}
+
+.pesquisa input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background:white;
+}
+
+.pesquisa input[type=text]:hover {
+  background-color: white;
+}
+
+.pesquisa button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background:grey;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.pesquisa button:hover {
+  background: #bbb;
+}
+/*LOGIN*/
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+background-color: #555;
+color:black;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+position: relative;
+bottom: 23px;
+right: 5px;
+width: 25px;
+height:25px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+display: none;
+position: fixed;
+bottom: 0;
+right: 15px;
+border: 3px solid #f1f1f1;
+z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+max-width: 300px;
+padding: 10px;
+background-color:#0067ad;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+background-color: #4CAF50;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+.mySlides1{
+display: flex;
+flex-direction: row;
+justify-content:center;
+position: relative;
+bottom:8px;
+
+}
+
+.legend{
+width:350px;
+background-color:rgba(0, 0, 0, 0.719);
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+height:auto;
+position: relative;
+bottom: 300px;
+left:100px
+}
+.nextgames{
+background-color:#0068ada4;
+width:650px;
+height:auto;
+}
+.finaltabela{
+position: relative;
+left:435px
+}
+.nextgames1{
+background-color:#0067AD;
+width:808px;
+height:351px;
+position: relative;
+bottom: 500px;
+}
+.finaltabela1{
+position: relative;
+left:635px
+}
+/*TABELA DE CLASSIFICACAO*/
+* {
+box-sizing: border-box;
+}
+
+.rowpoints {
+display: flex;
+padding-left:2%;
+
+}
+
+.columnpoints {
+flex: 50%;
+padding: 5px;
+}
+
+.tablepoint {
+border-collapse: collapse;
+border-spacing: 0;
+width:98%;
+background-color: rgba(0, 0, 0, 0.295);
+
+}
+
+th, td {
+text-align: center;
+padding: 8px;
+}
+
+tr:nth-child(even) {
+background-color:rgba(255, 255, 255, 0.527);
+}
+.titletable{
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  font-weight: bold;
+  text-decoration:underline;
+
+}
+.titletext{
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+
+}
+.barra{
+background-color:#383737;
+width:99.93%;
+position: relative;
+bottom:673px;
+left:8px;
+text-align: center;
+align-content: center;
+height: 80px;
+}
+
+.tudo{
+position: relative;
+bottom:600px;
+left:4.5%;
+background-color:rgba(255, 255, 255, 0.842);
+width:95%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+.coluna{
+width: 18%;
+padding-left: 5px;
+padding-right: 5px;
+padding-top:5px;
+padding-bottom: 5px;
+
+}
+.coluna1{
+width: 63.6%;
+padding-left: 5px;
+padding-top:5px;
+
+
+
+}
+.topico{
+display: flex;
+flex-direction: column;
+word-wrap: break-word;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #0067ad;
+justify-content: center;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+
+
+}
+.topico1{
+display: flex;
+flex-direction:row;
+word-wrap: break-word;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #0067ad;
+justify-content: center;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+
+
+}
+.imagens{
+justify-content: center;
+}
+.txt{
+position: relative;
+left:10px;
+word-wrap: break-word;
+}
+
+
+.btn {
+border: 2px solid white;
+background-color: white;
+color: white;
+padding: 14px 28px;
+font-size: 15px;
+cursor: pointer;
+width:45%;
+}
+.danger {
+background-color: #0067ad;
+border-color: white;
+color:white;
+}
+
+.danger:hover {
+background: white;
+color:#0067ad 
+}
+.btn {
+border-radius: 5px;
+}
+.coluna2{
+width: 27.95%;
+padding-left: 5px;
+padding-right: 5px;
+padding-top:5px;
+}
+.topico2{
+display: flex;
+flex-direction:column;
+word-wrap: break-word;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #0067ad;
+justify-content: center;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+/*TABELA SHOP*/
+body{
+background-color: grey;
+
+}
+.tudo1{
+background-color:white;
+width:65%;
+height:510px;
+position: relative;
+left:70px;
+bottom:500px;
+}
+.picture{
+width:30%;
+position: relative;
+top:-70px;
+left:338px;
+
+}
+
+.text{
+position: relative;
+left:10px;
+font-size:17px;
+font-family: Arial, Helvetica, sans-serif;
+color:#0066AA;
+}
+.btnshop{
+background-color: #0066AA;
+color:white;
+padding: 14px 28px;
+border-color:transparent;
+border-radius:2%;
+font-size: 15px;
+position: relative;
+bottom: 275px;
+right:290px;
+}
+.share{
+width:40px;
+height:45px;
+position: relative;
+bottom:257px;
+right:250px
+}
+.home{
+width:100px;
+position: relative;
+bottom:100px;
+right:520px;
+}
+.second{
+width:85px;
+position: relative;
+bottom:105px;
+right:510px;
+}
+.third{
+width:96px;
+position: relative;
+bottom:100px;
+right:490px
+}
+.newsshop{
+width:368px;
+height:510px;
+background-color: #0066AA;
+position: relative;
+bottom:566px;
+left:609px;
+
+}
+.item{
+width:92%;
+height:156px;
+position: relative;
+left:15px;
+top:40px;
+background-color: white;
+}
+.btnorder1{
+background-color:#87754C;
+color:white;
+padding: 5px 2px;
+border-color:transparent;
+border-radius:2%;
+font-size: 15px; 
+position: relative;
+bottom:63px;
+left:50px;
+}
+.item1{
+width:92%;
+height:156px;
+background-color: white;
+position:relative;
+top:80px;
+left:14px;
+}
+.btn3{
+background-color:#87754C;
+color:white;
+padding: 5px 2px;
+border-color:transparent;
+border-radius:2%;
+font-size: 15px; 
+position: relative;
+top:113px;
+left:70px;
+}
+.btnorder2{
+background-color:#87754C;
+color:white;
+padding: 5px 2px;
+border-color:transparent;
+border-radius:2%;
+font-size: 15px;
+position: relative;
+bottom:63px;
+left:50px;
+
+}
+.textfooter{
+  color:rgba(255, 255, 255, 0.616);
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top:23px;
+  left:273px;
+  }
+  
+.overlay-content{
+  position:relative;
+  justify-content: center;
+  position: relative;
+  
+  
+  
+  }
+.novo1, .novo2,.novo3{
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap; 
+  padding-right:10%;
+  padding-bottom: 5%;
+  position: relative;
+  top:-50px;
+  left:370px;
+  
+  }
+.novo{
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding-bottom: 15%;
+  }
+.novo4{
+  color:white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding-bottom: 15%;
+  }
+.fichatecnica1{
+width:133.8%;
+background-color:#212121;
+position: relative;
+top:70px;
+right:500px;
+height:530px;
+text-align: center;
+align-items: center;
+}
